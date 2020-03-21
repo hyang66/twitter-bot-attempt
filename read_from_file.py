@@ -22,4 +22,4 @@ for line in lines:
     if line != "":
         print(line)
         api.update_status(line) 
-        sleep(1 * minutes)
+        sleep(1 * hours)
