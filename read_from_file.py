@@ -19,5 +19,6 @@ f = open("./text.txt", "r")
 lines = f.read().split("\n")
 for line in lines: 
     if line != "":
+        print(line)
         api.update_status(line) 
         sleep(1 * hours)
