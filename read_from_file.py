@@ -1,6 +1,7 @@
 import tweepy
 from time import sleep
 hours = 60 * 60
+minutes = 60
 
 from os import environ
 CONSUMER_KEY = environ['CONSUMER_KEY']
@@ -21,4 +22,4 @@ for line in lines:
     if line != "":
         print(line)
         api.update_status(line) 
-        sleep(1 * hours)
+        sleep(1 * minutes)
