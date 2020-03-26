@@ -69,7 +69,7 @@ def generate_links(lines, n):
                     word_links[word_grouping].append("\n")
     return starting_words, word_links
 
-starting_words, word_links = generate_links(lines, 3)
+starting_words, word_links = generate_links(lines, 1)
 # for word in word_links:
     # print(str(word) + " : " + str(word_links[word]))
 
