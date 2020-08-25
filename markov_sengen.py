@@ -1,4 +1,5 @@
 import random
+from secrets import *
 # class ProbTree:
 
     # def __init__(self):
@@ -91,11 +92,7 @@ def generate_sentence(wl, sw):
 
 import tweepy
 from os import environ
-
-CONSUMER_KEY = environ['CONSUMER_KEY']
-CONSUMER_SECRET = environ['CONSUMER_SECRET']
-ACCESS_KEY = environ['ACCESS_KEY']
-ACCESS_SECRET = environ['ACCESS_SECRET']
+from time import sleep
 
 # Authenticate to Twitter
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -105,6 +102,8 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 # Create a tweet
-api.update_status(generate_sentence(word_links, starting_words))
+while True:
+    api.update_status(generate_sentence(word_links, starting_words))
+    sleep(60*60)
 
 
