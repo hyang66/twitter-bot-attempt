@@ -1,6 +1,8 @@
 # twitter-bot-attempt
 my first attempt at a twitter bot :)
 
+visit me here: https://twitter.com/sentence____bot
+
 The below are in reverse order of how I worked up to the final bot!
 (Note: cloning this repo won't allow you to make tweets, but by running the generate_sentence function, you can generate your own sentences, based on anything in a file called corpus.txt (left out for space reasons.)
 
