@@ -109,4 +109,11 @@ while True:
     api.update_status(generate_sentence(word_links, starting_words))
     sleep(60*60)
 
+def make_song():
+    for i in range(4):
+        for j in range(4):
+            print(generate_sentence(word_links, starting_words))
+        print("\n") 
+
+# make_song()
 
